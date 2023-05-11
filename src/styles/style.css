@@ -1,7 +1,5 @@
 @import "root.css";
 
-/* CUSTOM THEME =====> */
-
 /* Section Header */
 nav {
   display: flex;
@@ -517,6 +515,9 @@ footer .left .flex {
   .btn {
     font-size: 1rem;
   }
+  body {
+    overflow-x: hidden;
+  }
   /* Header Section */
   header .bgHeader .left,
   header .bgHeader .right {
@@ -584,13 +585,13 @@ footer .left .flex {
     width: 400px;
     height: 300px;
   }
-    .offer .right .card .title{
-      font-size: 1.3rem;
-    }
-     .offer .right .card{
-      width: 330px;
+  .offer .right .card .title {
+    font-size: 1.3rem;
+  }
+  .offer .right .card {
+    width: 330px;
     height: 450px;
-     }
+  }
   /* Creative Section */
   .creative {
     flex-direction: column;
