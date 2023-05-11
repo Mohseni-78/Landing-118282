@@ -16,8 +16,11 @@
 body {
   direction: rtl;
   font-weight: 300;
-  overflow-x: hidden;
   position: relative;
+}
+body,
+html {
+  overflow-x: hidden !important;
 }
 html {
   width: 100vw;
