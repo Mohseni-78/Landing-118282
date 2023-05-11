@@ -1,0 +1,60 @@
+:root {
+  --sky-blue: #4e94f0;
+  --pink: #f49ea8;
+  --pale-pink: #f9c9ce;
+  --blue: #2530c9;
+  --dark-blue: #3e427e;
+  --dark-pink: #fc1aaf;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Vazir", Vazir, Tahoma, Arial, sans-serif !important;
+}
+/* BASE THEME ====> */
+body {
+  direction: rtl;
+  font-weight: 300;
+  overflow-x: hidden;
+  position: relative;
+}
+html {
+  width: 100vw;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* DEFAULT THEME ======> */
+.flex {
+  display: flex;
+  align-items: center;
+}
+.btn {
+  border: 0;
+  outline: 0;
+  padding: 1rem 1.7rem;
+  background-color: var(--pink);
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: var(--sky-blue);
+}
+.imgSize {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  text-align: center;
+}
+.hide {
+  transform: translateX(1000px);
+}
+.container {
+  padding: 1.5rem;
+}

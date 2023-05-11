@@ -1,0 +1,708 @@
+@import "root.css";
+
+/* CUSTOM THEME =====> */
+
+/* Section Header */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 4rem;
+}
+.logo {
+  font-size: 3rem;
+  color: gray;
+}
+.hamburgerMenu {
+  font-size: 0.7rem;
+  color: black;
+}
+.svg {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.bgHeader {
+  position: relative;
+}
+.bgHeader img {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+.bgHeader .left {
+  padding: 1rem;
+  background: var(--blue);
+  color: white;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 15%;
+  bottom: -50%;
+  line-height: 1.5;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+.bgHeader .right {
+  padding: 1rem;
+  background: var(--dark-blue);
+  color: white;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  right: 17%;
+  top: 45%;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  line-height: 1.5;
+}
+.bgHeader .title {
+  font-size: 2rem;
+}
+.bgHeader .title + p {
+  font-size: 1rem;
+  line-height: 2.5;
+  margin-top: 1rem;
+}
+.cardLink {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+}
+
+/* Sidebar Section */
+aside {
+  background-color: #000;
+  width: 300px;
+  height: 100vh;
+  max-width: 100vh;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+  opacity: 85%;
+  transition: all 0.3s ease;
+}
+
+aside h1 {
+  cursor: pointer;
+}
+aside .lists {
+  padding: 2rem;
+}
+aside .lists ul {
+  list-style: none;
+  display: flex;
+  gap: 45px;
+  flex-direction: column;
+}
+aside .lists li {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+aside .lists li:hover {
+  color: var(--blue);
+}
+
+/* About Company Section */
+.AboutCompany {
+  margin-top: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+}
+.AboutCompany .right {
+  width: 100%;
+  color: white;
+  margin-right: 4rem;
+}
+.AboutCompany .right span {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.AboutCompany .right h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  width: 70%;
+}
+.AboutCompany .right p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
+  width: 65%;
+  margin: 2rem 0;
+}
+
+.AboutCompany .left {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.AboutCompantLeftCard {
+  width: 290px;
+  height: 300px;
+  line-height: 2;
+  background-color: white;
+  color: black;
+  padding: 1.5rem;
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.AboutCompantLeftCard:nth-child(2) {
+  margin-top: 7rem;
+}
+.AboutCompantLeftCard:nth-child(4) {
+  margin-top: 5rem;
+}
+
+.AboutCompantLeftCard h2 {
+  font-weight: 400;
+}
+.AboutCompantLeftCard p {
+  color: gray;
+  font-size: 0.9rem;
+}
+.cardSvgBg {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardSvg {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  color: white;
+}
+/*  Offer Section*/
+.offer {
+  margin: 5rem 0;
+  display: flex;
+}
+.offer .left {
+  width: 400px;
+  height: 600px;
+  margin: 0 16.5rem 0 0;
+  position: relative;
+  line-height: 2;
+}
+.offer .left img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+.offer .left::after {
+  content: "";
+  width: 270px;
+  height: 200px;
+  background-color: var(--pale-pink);
+  position: absolute;
+  bottom: 40%;
+  right: -69%;
+  display: block;
+}
+.offer .left::before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-color: var(--pale-pink);
+  position: absolute;
+  left: -39%;
+  bottom: 40%;
+  display: block;
+}
+.offer .left h1 {
+  color: var(--blue);
+}
+.offerOption {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.offerOption .svg {
+  width: 20px;
+  height: 20px;
+  color: var(--blue);
+}
+.offer .left p {
+  color: #000;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.offer .right {
+  z-index: 1;
+}
+.offer .right .card {
+  padding: 2rem;
+  background: var(--blue);
+  color: white;
+  width: 400px;
+  height: 500px;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  margin-top: 13rem;
+  position: relative;
+}
+.offer .right .title {
+  font-size: 2rem;
+}
+.offer .right .title + p {
+  font-size: 1rem;
+  line-height: 2.5;
+  margin: 1rem 0;
+}
+
+.offer .right .card img {
+  object-fit: cover;
+  width: 620px;
+  height: 350px;
+  position: absolute;
+  bottom: -15%;
+  right: 20%;
+  z-index: -1;
+}
+/* End */
+
+/* Creative Section */
+.creative {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--pale-pink);
+  padding: 5rem;
+  margin: 2rem 0;
+}
+
+.creative .right {
+  background-color: white;
+  padding: 40px 60px;
+  width: 550px;
+  height: 500px;
+  position: relative;
+}
+.creative .right img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: -15%;
+  right: -15%;
+}
+.creative .right h1 {
+  font-size: 3.75rem;
+  font-weight: 400;
+  color: var(--blue);
+}
+.creative .right p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 2rem 0;
+  line-height: 1.8;
+}
+.creative .left {
+  width: 550px;
+  height: 500px;
+  position: relative;
+}
+.creative .left img {
+  width: 550px;
+  height: 500px;
+}
+.svgClone {
+  position: absolute;
+  top: -15%;
+  left: -15%;
+}
+.creative svg {
+  fill: white;
+  width: 200px;
+  height: 200px;
+}
+/* About Us Section*/
+.AboutUs {
+  margin: 2rem 0;
+  display: flex;
+  line-height: 2;
+}
+.AboutUs .right {
+  margin: 0 10rem 0 0;
+}
+.AboutUs .right .firstPara {
+  font-weight: 400;
+  width: 100%;
+}
+.AboutUs .right .secondPara {
+  font-weight: 400;
+  width: 90%;
+}
+.AboutUs .right .svg {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 2rem;
+}
+.AboutUs .right p.header {
+  color: var(--blue);
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+.AboutUs .left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: 7rem;
+}
+.AboutUs .left .card:nth-child(1) {
+  width: 350px;
+  height: 350px;
+  background-color: var(--sky-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 12rem;
+  margin-left: 15rem;
+}
+.AboutUs .left .card:nth-child(1) p {
+  font-size: 1.7rem;
+  margin-right: 2rem;
+}
+.AboutUs .left .card:nth-child(2) {
+  width: 200px;
+  height: 200px;
+  background-color: var(--dark-pink);
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.AboutUs .left .card:nth-child(2) p {
+  font-size: 1rem;
+  margin-right: 2rem;
+}
+.AboutUs .left .card:nth-child(2) h1 {
+  font-size: 3rem;
+}
+.AboutUs .left .card:nth-child(3) {
+  width: 350px;
+  height: 350px;
+  background-color: var(--blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.AboutUs .left .card:nth-child(3) p {
+  font-size: 1.7rem;
+  margin-right: 2rem;
+}
+.AboutUs .left .card p {
+  font-size: 1.5rem;
+  align-self: flex-start;
+}
+.AboutUs .left .card h1 {
+  font-size: 8rem;
+}
+/* End */
+/* Consultation Section*/
+.consultation {
+  background-color: var(--pale-pink);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+  padding: 4.5rem;
+}
+.consultation h1 {
+  color: var(--blue);
+  font-size: 2.5rem;
+}
+.consultation .btn {
+  width: 200px;
+  background-color: var(--blue);
+  padding: 10px;
+}
+.consultation .btn:hover {
+  opacity: 70%;
+}
+/* Portfolio Section  */
+.portfolio {
+  margin: 2rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio .flex {
+  gap: 30px;
+}
+.portfolio h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Footer Section */
+footer {
+  margin-top: 2rem;
+  background-color: var(--blue);
+}
+footer .left {
+  background-color: white;
+  padding: 5rem;
+  width: 30%;
+  line-height: 3;
+}
+footer .right {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  color: white;
+  padding: 5rem;
+}
+footer .right p {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+footer .right h1 {
+  font-size: 2.5rem;
+  margin: 0 auto 0 0;
+}
+footer .left h2 {
+  color: var(--dark-pink);
+}
+footer .left hr {
+  margin: 4rem 0 0 0;
+}
+footer .left .flex {
+  gap: 30px;
+  margin-top: 2rem;
+}
+.first {
+  display: flex;
+  justify-content: space-between;
+}
+.second {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--blue);
+  width: 100%;
+  padding: 4rem;
+  color: white;
+  line-height: 2;
+  gap: 30px;
+}
+.second div {
+  width: 50%;
+}
+.thirthy {
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 2rem;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Default theme */
+  .btn {
+    font-size: 1rem;
+  }
+  /* Header Section */
+  header .bgHeader .left,
+  header .bgHeader .right {
+    width: 345px;
+    height: 345px;
+  }
+  header .bgHeader .title {
+    font-size: 1.3rem;
+  }
+  header .bgHeader .des {
+    font-size: 15px !important;
+  }
+  /* Section Header */
+  .bgHeader .left {
+    left: 10%;
+    bottom: -110%;
+  }
+  .bgHeader .right {
+    right: 10%;
+  }
+  /* Section AboutCompany */
+  .AboutCompany {
+    margin-top: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--blue);
+  }
+  .AboutCompany .right h2 {
+    font-size: 2rem;
+  }
+  .AboutCompany .right {
+    color: white;
+    margin-bottom: 2rem;
+  }
+  .AboutCompantLeftCard:nth-child(2) {
+    margin-top: 0;
+  }
+  .AboutCompantLeftCard:nth-child(4) {
+    margin-top: 0;
+  }
+  /* Offer  Section*/
+  .offer {
+    flex-direction: column;
+    margin: 5rem 0;
+    padding: 2rem;
+  }
+  .offer .left {
+    width: 500px;
+    height: 600px;
+    position: relative;
+    line-height: 2;
+    margin: 1rem;
+  }
+  .offer .left::before {
+    left: -41%;
+  }
+  .offer .left img {
+    width: 300px;
+    height: 350px;
+  }
+
+  .offer .right .card img {
+    width: 400px;
+    height: 300px;
+  }
+    .offer .right .card .title{
+      font-size: 1.3rem;
+    }
+     .offer .right .card{
+      width: 330px;
+    height: 450px;
+     }
+  /* Creative Section */
+  .creative {
+    flex-direction: column;
+  }
+  .creative .right {
+    order: 2;
+    width: 400px;
+    height: 350px;
+  }
+  .creative .right img {
+    bottom: -10%;
+    right: -10%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .creative .right h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--blue);
+  }
+  .creative .left {
+    width: 400px;
+    height: 350px;
+    position: relative;
+  }
+  .creative .left img {
+    width: 400px;
+    height: 350px;
+  }
+  .creative svg {
+    fill: white;
+    width: 120px;
+    height: 120px;
+  }
+  /* About Us Section*/
+  .AboutUs {
+    flex-direction: column;
+  }
+  .AboutUs .right {
+    margin: 0 4rem 0 0;
+  }
+  .AboutUs .left .card:nth-child(1) {
+    width: 280px;
+    height: 280px;
+    margin-left: -5rem;
+  }
+  .AboutUs .left .card:nth-child(2) {
+    order: 2;
+    margin-left: 2rem;
+    width: 200px;
+    height: 200px;
+  }
+  .AboutUs .right .firstPara {
+    width: 80%;
+  }
+  .AboutUs .right .secondPara {
+    width: 80%;
+  }
+  .AboutUs .left .card:nth-child(1) p {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+  }
+  .AboutUs .left .card:nth-child(1) h1 {
+    font-size: 5rem;
+  }
+
+  .AboutUs .left .card:nth-child(3) {
+    width: 260px;
+    height: 280px;
+  }
+  .AboutUs .left .card:nth-child(3) p {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+  }
+  .AboutUs .left .card:nth-child(3) h1 {
+    font-size: 5rem;
+  }
+  /* Consultation Section*/
+  .consultation {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .consultation h1 {
+    font-size: 2rem;
+  }
+  /* Portfolio Section  */
+  .portfolio {
+    flex-direction: column;
+  }
+  .portfolio .flex {
+    flex-direction: column;
+  }
+  /* Footer Section */
+  footer .first {
+    flex-direction: column;
+  }
+  footer .right h1 {
+    font-size: 1.7rem;
+  }
+  footer .right p {
+    font-size: 1rem;
+  }
+  footer .left {
+    width: 100%;
+  }
+  .second {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .second div {
+    width: 100%;
+  }
+}
