@@ -510,7 +510,7 @@ footer .left .flex {
   letter-spacing: 0.5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   /* Default theme */
   .btn {
     font-size: 1rem;
@@ -564,6 +564,8 @@ footer .left .flex {
   /* Offer  Section*/
   .offer {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 5rem 0;
     padding: 2rem;
   }
@@ -574,16 +576,21 @@ footer .left .flex {
     line-height: 2;
     margin: 1rem;
   }
-  .offer .left::before {
-    left: -41%;
-  }
   .offer .left img {
-    width: 170px;
-    height: 350px;
+    width: 300px;
+    height: 360px;
+  }
+  .offer .left::before {
+    width: 23rem;
+    height: 10rem;
+  }
+  .offer .left::after {
+    width: 20rem;
+    height: 10rem;
   }
 
   .offer .right .card img {
-    width: 400px;
+    width: 500px;
     height: 300px;
   }
   .offer .right .card .title {
@@ -706,5 +713,10 @@ footer .left .flex {
   }
   .second div {
     width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .offer .left::before {
+    display: none;
   }
 }
