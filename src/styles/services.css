@@ -34,6 +34,7 @@ aside {
   transition: all 0.3s ease;
   z-index: 99;
 }
+
 aside h1 {
   cursor: pointer;
 }

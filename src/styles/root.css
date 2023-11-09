@@ -1,3 +1,4 @@
+@import 'vazir.css';
 :root {
   --sky-blue: #4e94f0;
   --pink: #f49ea8;
@@ -17,6 +18,8 @@ body {
   direction: rtl;
   font-weight: 300;
   position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 body,
 html {

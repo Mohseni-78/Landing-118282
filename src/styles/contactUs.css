@@ -55,10 +55,8 @@ aside .lists li:hover {
 }
 /* Form */
 main{
-  /* text-align: center; */
   display: flex;
   align-items: center;
-  /* justify-content: space-around; */
 }
 form{
   display: flex;
